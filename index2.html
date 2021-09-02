@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+    //EJERCICIO 2
+
+        let totalPozo = 50;
+        alert('Bienvenido al juego de apuestas, comienzas con 50 euros');
+        while(totalPozo > 0 && totalPozo <= 200){
+
+            let numeroAleatorio = Math.floor(Math.random() * (6 - 1) + 1);
+            console.log('NUMERO ALEATORIO:' + numeroAleatorio);
+            let numero = prompt("Ingresa el numero al cual queres apostar");
+            let apuesta = prompt("Ingresa cuanto dinero queres apostar");
+            let apuestafinal;
+            totalPozo= parseInt(totalPozo) - parseInt(apuesta);
+            
+            console.log('TOTAL POZO:' + totalPozo);
+            if(parseInt(numero) === parseInt(numeroAleatorio))
+            {
+                apuestafinal = parseInt(apuesta) * 2;
+                console.log('APUESTAFINAL:' +apuestafinal);
+                totalPozo = parseInt(totalPozo) + parseInt(apuestafinal);
+            }
+            console.log('TOTAL POZO FINAL:' + totalPozo);
+
+            if(totalPozo>0)
+            {
+                alert('Te quedan: ' + totalPozo + ' Euros');
+            }
+            
+        }
+     
+        if(totalPozo<=0)
+        {
+            alert('Perdiste');
+        }
+        else
+        {
+            alert('Ganaste');
+        }
+
+    </script>
+
+    </body>
+</html>

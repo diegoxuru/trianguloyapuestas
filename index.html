@@ -1,4 +1,4 @@
-ª<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,34 +9,8 @@
 <body>
 
     <script>
- /*       const numeroAleatorio = Math.round(Math.random()*10);
-        console.log(numeroAleatorio);
-        let Opcion = prompt("Escribí un numero");
-        if(numeroAleatorio<Opcion)
-        {
-            prompt("Es mas chico");
-        }
-        else if(numeroAleatorio==Opcion)
-        {
-            prompt("Buena campeón");
-        }
-        else
-        {
-            alert("Es mas grande");
-        }
-*/
         
-/*
-        function calcularivainc(monto){
-            return monto * 1.22;
-        }*/
-    //    let resultado = calcularivainc(prompt("Ingresa un monto"));
-       
-    
-  
-    
     ////EJERCICIO 1
-    /*
         let lado1 = prompt("Ingresa el largo del primer lado");
         let lado2 = prompt("Ingresa el largo del segundo lado");
         let lado3 = prompt("Ingresa el largo del tercer lado");
@@ -65,43 +39,6 @@
         console.log(lado2);
         console.log(lado3);
         alert(calculartriangulo(lado1,lado2,lado3));
-    */
-
-    //---------------------------------------------------------------------------
-
-    //EJERCICIO 2
-
-        let totalPozo = 50;
-        alert('Bienvenido al juego de apuestas, comienzas con 50 euros');
-        while(totalPozo > 0 && totalPozo <= 200){
-
-            let numeroAleatorio = Math.floor(Math.random() * (6 - 1) + 1);
-            console.log('NUMERO ALEATORIO:' + numeroAleatorio);
-            let numero = prompt("Ingresa el numero al cual queres apostar");
-            let apuesta = prompt("Ingresa cuanto dinero queres apostar");
-            let apuestafinal;
-            totalPozo= parseInt(totalPozo) - parseInt(apuesta);
-            
-            console.log('TOTAL POZO:' +totalPozo);
-            if(parseInt(numero) === parseInt(numeroAleatorio))
-            {
-                apuestafinal = parseInt(apuesta) * 2;
-                console.log('APUESTAFINAL:' +apuestafinal);
-                totalPozo = parseInt(totalPozo) + parseInt(apuestafinal);
-            }
-            console.log('TOTAL POZO FINAL:' + totalPozo);
-            
-        }
-     
-        if(totalPozo<0)
-        {
-            alert('Sos pobre');
-        }
-        else
-        {
-            alert('Sos rico');
-        }
-
 
 
     </script>
